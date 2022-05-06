@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="297.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="solano.alberto.TL.MenuGeneralClienteController">
+   <children>
+      <Button fx:id="btnInfo" layoutX="80.0" layoutY="172.0" mnemonicParsing="false" onAction="#irInformacion" prefHeight="56.0" prefWidth="144.0" text="Ir a mi informacion" />
+      <Button fx:id="btnServicios" layoutX="271.0" layoutY="172.0" mnemonicParsing="false" onAction="#irServicios" prefHeight="56.0" prefWidth="144.0" text="Pedir servicios" />
+      <Label layoutX="236.0" layoutY="46.0" text="Menu cliente">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVehiculos" layoutX="450.0" layoutY="172.0" mnemonicParsing="false" onAction="#irVehiculo" prefHeight="56.0" prefWidth="144.0" text="Vehiculos" />
+   </children>
+</AnchorPane>

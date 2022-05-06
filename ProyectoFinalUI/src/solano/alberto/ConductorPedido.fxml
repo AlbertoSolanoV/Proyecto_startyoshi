@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="586.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="solano.alberto.TL.ConductorPedidoController">
+   <children>
+      <TableView fx:id="tblPedidos" layoutX="57.0" layoutY="90.0" prefHeight="200.0" prefWidth="665.0">
+        <columns>
+          <TableColumn fx:id="colCodigoP" prefWidth="61.0" text="Codigo" />
+          <TableColumn fx:id="colDescripcionP" prefWidth="148.0" text="Descripcion" />
+            <TableColumn fx:id="colFechaCreacionP" prefWidth="97.0" text="Fecha Creacion" />
+            <TableColumn fx:id="colEstadoP" prefWidth="114.0" text="Estado" />
+            <TableColumn fx:id="colProvinciaP" prefWidth="74.0" text="Provincia" />
+            <TableColumn fx:id="colCantonP" prefWidth="84.0" text="Canton" />
+            <TableColumn fx:id="colDistritoP" prefWidth="86.0" text="Distrito" />
+        </columns>
+      </TableView>
+      <Label layoutX="57.0" layoutY="59.0" text="Pedidos disponibles">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblMisPedidos" layoutX="57.0" layoutY="338.0" prefHeight="200.0" prefWidth="665.0">
+         <columns>
+            <TableColumn fx:id="colCodigoC" prefWidth="61.0" text="Codigo" />
+            <TableColumn fx:id="colDescripcionC" prefWidth="148.0" text="Descripcion" />
+            <TableColumn fx:id="colFechaCreacionC" prefWidth="97.0" text="Fecha Creacion" />
+            <TableColumn fx:id="colEstadoC" prefWidth="114.0" text="Estado" />
+            <TableColumn fx:id="colProvinciaC" prefWidth="74.0" text="Provincia" />
+            <TableColumn fx:id="colCantonC" prefWidth="84.0" text="Canton" />
+            <TableColumn fx:id="colDistritoC" prefWidth="86.0" text="Distrito" />
+         </columns>
+      </TableView>
+      <Label layoutX="57.0" layoutY="308.0" text="Mis pedidos">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAceptarPedido" layoutX="746.0" layoutY="168.0" mnemonicParsing="false" onAction="#PedidoAceptado" prefHeight="45.0" prefWidth="102.0" text="Aceptar pedido" />
+      <Button fx:id="btnFinalizarPedido" layoutX="746.0" layoutY="416.0" mnemonicParsing="false" onAction="#finalizarPedido" prefHeight="45.0" prefWidth="102.0" text="Finalizar pedido" />
+   </children>
+</AnchorPane>
